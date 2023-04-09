@@ -1,0 +1,140 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul,
+ol,
+li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 14px;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   font-family: Arial, Verdana, sans-serif;
+}
+
+/* --------- */
+
+.container {
+   padding: 50px 30px;
+   width: 400px;
+
+   border-radius: 10px;
+   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+   background-color: #fff;
+}
+.container *:not(i) {
+   font-family: "Rubik", sans-serif;
+}
+
+.colors {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.colors input[type="color"] {
+   width: 100px;
+   height: 45px;
+
+   cursor: pointer;
+   appearance: none;
+   -webkit-appearance: none;
+   background-color: transparent;
+}
+.colors input[type="color"]::-webkit-color-swatch {
+   border-radius: 20px;
+   border: none;
+}
+
+.buttons {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin: 30px 0;
+}
+.buttons button {
+   height: 35px;
+   width: 35px;
+
+   background-color: transparent;
+   border: 2px solid #d5d5dc;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.buttons .active {
+   border: none;
+   background-color: #4a6ee0;
+   color: #fff;
+}
+.rotate-icon i {
+   transform: rotate(45deg);
+}
+
+#submit {
+   display: block;
+   padding: 12px 70px;
+   margin: 0 auto 30px auto;
+
+   cursor: pointer;
+   border-radius: 25px;
+   background-color: #4a6ee0;
+   color: #fff;
+   font-size: 16px;
+}
+
+.output {
+   background-color: #f0f2fc;
+}
+
+#code {
+   width: 100%;
+   padding: 10px 20px;
+
+   background-color: transparent;
+   resize: none;
+   color: #30304a;
+   outline: none;
+}
+
+#copy {
+   position: relative;
+   left: 85%;
+   bottom: 10px;
+   padding: 5px;
+   min-width: 43px;
+
+   cursor: pointer;
+   border-radius: 3px;
+   font-size: 14px;
+   background-color: #4a6ee0;
+   color: #fff;
+}
